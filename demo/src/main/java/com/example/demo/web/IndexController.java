@@ -22,7 +22,6 @@ public class IndexController {
         return Result.returnTrue("this is index page");
     }
 
-    //@RequiresPermissions("login")
     @RequestMapping("/login")
     public Result login(String userName,String password){
 
@@ -43,6 +42,7 @@ public class IndexController {
 
     @RequestMapping("/getUserInfo")
     public Result getUserInfo(){
+
 
 
         System.out.println(SecurityUtils.getSubject().getSession().getId());

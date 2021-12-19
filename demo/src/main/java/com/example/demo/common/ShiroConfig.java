@@ -13,7 +13,12 @@ import org.springframework.context.annotation.Configuration;
 import java.util.HashMap;
 import java.util.Map;
 
-@Configuration
+/**
+ *
+ * 单例时使用
+ @Configuration
+ */
+
 public class ShiroConfig {
 
     // 将自己的验证方式加入容器
@@ -81,5 +86,7 @@ public class ShiroConfig {
     public static DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator(){
         return new DefaultAdvisorAutoProxyCreator();
     }
+
+
 
 }

@@ -70,6 +70,10 @@ public class MyShiroRealm extends AuthorizingRealm {
                 // 添加权限
                 //simpleAuthorizationInfo.addStringPermission(permission.getPermission());
 
+        /*
+        这里模拟添加权限,delete/create,正常的情况下，应该是要数据库中存储用户所具有的接口权限和用户所在角色所具有的
+        权限。
+         */
         simpleAuthorizationInfo.addStringPermission("delete");
         simpleAuthorizationInfo.addStringPermission("create");
 //            }
